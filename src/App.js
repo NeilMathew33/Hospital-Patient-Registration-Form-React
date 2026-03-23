@@ -1,13 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-import HospitalPatientRegistraion from './container/HospitalPatientRegistration';
+import AddPatient from './container/AddPatient';
+import SearchPatient from './container/SearchPatient';
+import DeletePatient from './container/DeletePatient';
+import ViewAllPatients from './container/ViewAllPatients';
+import PatientNavBar from './container/PatientNavBar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-     <HospitalPatientRegistraion>
-     </HospitalPatientRegistraion>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<AddPatient />}/>
+      <Route path="/search" element={<SearchPatient />}/>
+      <Route path="/delete" element={<DeletePatient />}/>
+      <Route path="/ViewAll" element={<ViewAllPatients />}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,8 +1,10 @@
 import React from 'react'
+import PatientNavBar from './PatientNavBar'
 
-const  HospitalPatientRegistraion= () => {
+const  AddPatient= () => {
   return (
     <div>
+        <PatientNavBar />
         <div className="container">
             <div className="row">
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -78,4 +80,4 @@ const  HospitalPatientRegistraion= () => {
   )
 }
 
-export default HospitalPatientRegistraion
+export default AddPatient
