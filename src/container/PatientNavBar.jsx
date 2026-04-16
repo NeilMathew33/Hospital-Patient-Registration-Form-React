@@ -11,7 +11,7 @@ const PatientNavBar = () => {
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="/">Add Patient</a>
+        <a class="nav-link active" aria-current="page" href="/Add">Add Patient</a>
         <a class="nav-link" href="/search">Search Patient</a>
         <a class="nav-link" href="/delete">Delete Patient</a>
         <a class="nav-link" href="/ViewAll">View All Patients</a>

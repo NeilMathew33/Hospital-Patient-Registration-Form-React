@@ -6,15 +6,17 @@ import DeletePatient from './container/DeletePatient';
 import ViewAllPatients from './container/ViewAllPatients';
 import PatientNavBar from './container/PatientNavBar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from './container/Login';
 
 function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<AddPatient />}/>
+      <Route path="/Add" element={<AddPatient />}/>
       <Route path="/search" element={<SearchPatient />}/>
       <Route path="/delete" element={<DeletePatient />}/>
       <Route path="/ViewAll" element={<ViewAllPatients />}/>
+      <Route path="/" element={<Login />}/>
     </Routes>
     </BrowserRouter>
   );
