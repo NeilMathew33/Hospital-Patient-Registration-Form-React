@@ -7,6 +7,7 @@ import ViewAllPatients from './container/ViewAllPatients';
 import PatientNavBar from './container/PatientNavBar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './container/Login';
+import SignUp from './container/SignUp';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/delete" element={<DeletePatient />}/>
       <Route path="/ViewAll" element={<ViewAllPatients />}/>
       <Route path="/" element={<Login />}/>
+      <Route path="/SignUp" element={<SignUp />}/>
     </Routes>
     </BrowserRouter>
   );
